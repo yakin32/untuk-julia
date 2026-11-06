@@ -61,7 +61,7 @@ const CONFIG = {
             date: "First Date",
             category: "sweet",
             // Ganti URL ini dengan path fotomu, misalnya: "images/foto1.jpg"
-            image: "./images/firstdate.jpg",
+            image: "./firstdate.jpg",
             likes: 1000
         },
         {
@@ -70,7 +70,7 @@ const CONFIG = {
             caption: "pas kamu ngirim foto ini ke akuu akuu gak bisa berkata-kata sayang,kamu terlalu cantik.",
             date: "kamu cantik banget",
             category: "funny",
-            image: "./images/lucuu.jpg",
+            image: "./lucuu.jpg",
             likes: 2400
         },
         {
@@ -79,7 +79,7 @@ const CONFIG = {
             caption: "Matahari terbenam memang indah, tapi bagiku pemandangan paling memesona tetap ada di matamu.",
             date: "Jalan Sore",
             category: "dates",
-            image: "./images/gemew.jpg",
+            image: "./gemew.jpg",
             likes: 3000
         },
         {
@@ -88,7 +88,7 @@ const CONFIG = {
             caption: "Setiap langkah bersamamu rasanya selalu penuh warna dan kehangatan. Jangan biarkan ego merusaknya yaa.",
             date: "Trip Bersama",
             category: "sweet",
-            image: "./images/manis.jpg",
+            image: "./manis.jpg",
             likes: 1800
         },
         {
@@ -97,7 +97,7 @@ const CONFIG = {
             caption: "Wajah cemberut kamu aja lucu banget, apalagi kalau lagi senyum bahagia. Senyum lagi dong sayang...",
             date: "Foto Candid",
             category: "funny",
-            image: "./images/funny.jpg",
+            image: "./funny.jpg",
             likes: 10000
         },
         {
@@ -106,7 +106,7 @@ const CONFIG = {
             caption: "barang kali kamu kangen sama aku.",
             date: "aku",
             category: "dates",
-            image: "./images/wlee.jpg",
+            image: "./wlee.jpg",
             likes: 990
         }
     ]

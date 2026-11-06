@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Permintaan Maaf Untukmu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+</head>
+<body>
+    <!-- Floating Hearts Canvas -->
+    <canvas id="heartsCanvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="top-nav">
+        <a href="index.html" class="brand-badge" id="brandName">
+            Untuk Sayangku ❤️
+        </a>
+        <a href="gallery.html" class="nav-link-btn">
+            <span>📸</span> Galeri Foto Kita
+        </a>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="hero-container">
+        <!-- Interactive Envelope (Initial View) -->
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope-box">
+                <div class="envelope-seal">💌</div>
+                <h2 class="envelope-title" id="envelopeTitle">Ada Surat Spesial Untukmu</h2>
+                <p class="envelope-subtitle" id="envelopeSubtitle">Sentuh / Klik amplop untuk membaca...</p>
+                <div class="envelope-tap-hint">✨ Klik Disini Untuk Buka ✨</div>
+            </div>
+        </div>
+
+        <!-- Apology Letter (Revealed after opening envelope) -->
+        <div class="letter-wrapper" id="letterWrapper">
+            <div class="letter-header">
+                <span class="letter-badge">DARI LUBUK HATIKU</span>
+                <h1 class="letter-title">Aku Minta Maaf yaa...</h1>
+            </div>
+
+            <div class="letter-body">
+                <div class="letter-greeting" id="letterGreeting">Hai Sayang,</div>
+                
+                <div class="letter-paragraphs" id="letterParagraphs">
+                    <!-- Populated dynamically from config.js -->
+                </div>
+
+                <!-- Promises / Commitments -->
+                <div class="promises-box">
+                    <div class="promises-title" id="promisesTitle">
+                        <span>✨</span> Janji Kecilku Untukmu
+                    </div>
+                    <ul class="promises-list" id="promisesList">
+                        <!-- Populated dynamically from config.js -->
+                    </ul>
+                </div>
+
+                <div class="letter-signature" id="letterSignature">
+                    Dengan segenap cintaku,<br>
+                    <span>Dari yang selalu sayang kamu</span>
+                </div>
+            </div>
+
+            <!-- Interactive Decision Section -->
+            <div class="decision-section">
+                <div class="decision-question" id="decisionQuestion">
+                    Kamu mau maafin aku kan? 🥺
+                </div>
+                <div class="buttons-row">
+                    <button class="btn-yes" id="btnYes">
+                        <span>Iya, aku maafin</span> <span>❤️</span>
+                    </button>
+                    <button class="btn-no" id="btnNo">
+                        <span>Nggak mau</span> <span>😜</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification for Dodging Button Quotes -->
+    <div class="toast-quote" id="toastQuote">Eits, gak bisa diklik 😜</div>
+
+    <!-- Success Modal When Accepted -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">🥰</div>
+            <h2 class="modal-title" id="modalTitle">Yeay! Makasih Banyak Sayang!</h2>
+            <p class="modal-text" id="modalText">
+                Janji aku bakal jaga perasaan kamu lebih baik lagi. Sekarang yuk kita intip kenangan manis kita...
+            </p>
+            <a href="gallery.html" class="btn-gallery-action" id="modalGalleryBtn">
+                <span>Buka Galeri Kenangan Kita</span> <span>📸</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle">
+        <div class="music-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="music-text">Musik: Aktif 🎵</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

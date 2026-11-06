@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kenangan Manis Kita 📸❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📸</text></svg>">
+</head>
+<body>
+    <!-- Floating Hearts Canvas -->
+    <canvas id="heartsCanvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="top-nav">
+        <a href="index.html" class="nav-link-btn">
+            <span>💌</span> Kembali ke Surat Maaf
+        </a>
+        <a href="index.html" class="brand-badge">
+            Kenangan Kita 💕
+        </a>
+    </header>
+
+    <!-- Gallery Container -->
+    <main class="gallery-container">
+        <!-- Hero Title -->
+        <section class="gallery-hero">
+            <h1>Momen Terindah Bersamamu</h1>
+            <p>Setiap foto punya cerita manisnya masing-masing. Jangan biarkan satu kesalahan kecil menghapus sejuta senyum bahagia yang pernah kita buat bersama.</p>
+        </section>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">🌟 Semua Foto</button>
+            
+        </div>
+
+        <!-- Polaroid Photo Grid -->
+        <div class="polaroid-grid" id="polaroidGrid">
+            <!-- Populated dynamically by gallery.js from config.js -->
+        </div>
+
+        <!-- Upload Custom Photo Section -->
+        <section class="upload-section">
+            <h3>Mau Tambah Foto Kenangan Baru? 🖼️</h3>
+            <p>Kamu bisa langsung upload foto dari HP atau laptopmu ke galeri ini sekarang juga!</p>
+            <label for="fileInput" class="upload-btn-label">
+                <span>➕</span> Unggah Foto Kamu
+            </label>
+            <input type="file" id="fileInput" accept="image/*">
+        </section>
+    </main>
+
+    <!-- Lightbox Modal for Fullscreen Photo View -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-info">
+                <h2 class="lightbox-title" id="lightboxTitle">Judul Foto</h2>
+                <p class="lightbox-caption" id="lightboxCaption">Deskripsi kenangan indah bersama.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle">
+        <div class="music-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="music-text">Musik: Aktif 🎵</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
